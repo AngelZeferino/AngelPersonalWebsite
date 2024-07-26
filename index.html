@@ -16,11 +16,11 @@
 					<h1 id="logo"><a href="index.html">Angel Zeferino</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Work</a></li>
+							<li><a href="#work-experiences">Work</a></li>
 							<li>
-								<a href="#">About</a>
+								<a href="#about">About</a>
 							</li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -47,7 +47,7 @@
 				<span> <img src="images/pic01.jpg" alt="Profile-Picture" class="image-transition" /></span>	
 			    </section>
 
-				<section id="four" class="wrapper style1 special fade-up">
+				<section id="work-experiences" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
 							<h2>My work experience</h2>
@@ -81,7 +81,7 @@
 
 			<!-- Start of content-->	
 				<section>
-					<div class="content-more">
+					<div class="content-more" id="about">
 						<div id="content-desc">
 							<header>
 								<h2>Community Outreach</h2>
@@ -118,18 +118,33 @@
 					</div>
 				  </section>
 				
-			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+			<!--Contact -->
+				<section id="contact" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
 							<h2>Contact me</h2>
 						</header>
-						<form method="post" action="#" class="cta">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
-							</div>
-						</form>
+						<form action="#">
+
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						
+							<label for="country">Subject</label>
+							<select id="country" name="country">
+							  <option value="australia">Web Development</option>
+							  <option value="canada">Partnership</option>
+							  <option value="usa">Other</option>
+							</select>
+						
+							<label for="subject">Subject</label>
+							<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						
+							<input type="submit" value="Submit">
+						
+						  </form>
 					</div>
 				</section>
 
@@ -137,7 +152,7 @@
 				<footer id="footer">
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/angelzeferino/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://github.com/AngelZeferino" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
