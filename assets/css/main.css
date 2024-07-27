@@ -244,7 +244,7 @@ input, select, textarea {
 		.content-more {
 			display: flex;
 			max-width: 100%; /* Ensure the container doesn't exceed the full width of its parent */
-			height: 100vh; /* Set a height for the container, can be adjusted as needed */
+			height: 130vh; /* Set a height for the container, can be adjusted as needed */
 		  }
 		.content-desc{
 			border-bottom: 3px solid #267ced;
