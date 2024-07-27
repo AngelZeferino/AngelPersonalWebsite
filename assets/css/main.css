@@ -206,13 +206,15 @@ input, select, textarea {
 		
 	}
 
-	@media(max-width:966px)
+	@media(max-width:768px)
 	{
 		.profile-content
 		{ 
 		
 			display: flex;
 			flex-direction: column;
+			max-width: 600px;
+			height:auto;
 
 		} 
 		#description-content{
@@ -225,7 +227,6 @@ input, select, textarea {
 		#description-content p{
 			margin:0;
 			padding:0;
-			max-width: 320px;;
 			height:auto;
 			align-items: center;
 
@@ -239,6 +240,9 @@ input, select, textarea {
 		.content-more{
 			display:flex;
 			flex-direction: column-reverse;
+		}
+		.content-desc{
+			border-bottom: 3px solid #267ced;
 		}
 		
 	}
