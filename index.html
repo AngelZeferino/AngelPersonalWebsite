@@ -123,7 +123,7 @@
 						<header>
 							<h2>Contact me</h2>
 						</header>
-						<form action="https://formspree.io/f/mrbzpqdp" method="POST">
+						<form action="https://formspree.io/f/mrbzpqdp" method="POST" id="contact-form">
 
 							<label for="fname">First Name</label>
 							<input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -131,16 +131,15 @@
 							<label for="lname">Last Name</label>
 							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 						
-							<label for="country">Subject</label>
-							<select id="country" name="country">
-							  <option value="australia">Web Development</option>
-							  <option value="canada">Partnership</option>
-							  <option value="usa">Other</option>
+							<label for="subject">Subject</label>
+							<select id="subject" name="subjectList" form ="contact-form">
+							  <option value="web-development">Web Development</option>
+							  <option value="partnership">Partnership</option>
+							  <option value="other">Other</option>
 							</select>
 						
-							<label for="subject">Subject</label>
-							<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-						
+							<label for="message">Message</label>
+							<textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 							<input type="submit" value="Submit">
 						
 						  </form>
