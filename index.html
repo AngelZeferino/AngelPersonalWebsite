@@ -126,22 +126,24 @@
 						<form action="https://formspree.io/f/mrbzpqdp" method="POST" id="contact-form">
 
 							<label for="fname">First Name</label>
-							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+							<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 						
 							<label for="lname">Last Name</label>
-							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+							<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="Your email" required>
 						
 							<label for="subject">Subject</label>
-							<select id="subject" name="subjectList" form ="contact-form">
+							<select id="subject" name="subjectList" form ="contact-form" required>
 							  <option value="web-development">Web Development</option>
 							  <option value="partnership">Partnership</option>
 							  <option value="other">Other</option>
 							</select>
 						
 							<label for="message">Message</label>
-							<textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-							<input type="submit" value="Submit">
-						
+							<textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+							<input type="submit" value="Submit" >
 						  </form>
 					</div>
 				</section>
