@@ -302,6 +302,7 @@ input, select, textarea {
 	#text-section{
 		padding-bottom: 40px;
 		border-left: 3px solid #e9e5e5;
+		border-right:none;
 	}
 	#image-section img{
 		padding:20px;
