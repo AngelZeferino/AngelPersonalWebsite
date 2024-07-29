@@ -230,14 +230,34 @@ input, select, textarea {
   
 	.content-more {
 	  display: flex;
-	  flex-direction: column-reverse !important;
+	  flex-direction: column !important;
 	  max-width: 100% !important; 
-	  height: 130vh !important; 
+	  height: auto!important; 
 	}
-  
-	.content-desc {
-	  border-bottom: 3px solid #267ced;
+
+	.content-grabber{
+		padding:20px;
 	}
+	.profile-angelzeferino-headshot{
+		width:250px;
+		height:auto;
+		display:flex;
+		padding:0;
+		padding-top: 30px;
+		justify-content: center;
+	}
+	#work-experiences{
+		height:fit-content;
+	}
+
+	#text-section{
+		padding-bottom: 40px;
+	}
+	#image-section img{
+		padding:20px;
+
+	}
+
   }
   
 	  #content-img {
