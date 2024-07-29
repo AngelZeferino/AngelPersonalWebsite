@@ -243,6 +243,51 @@ input, select, textarea {
 	border-right: 3px solid #e9e5e5; /* Add a 3px solid border to the left */
   }
 
+  /* Goto Next */
+
+	.goto-next {
+		border: 0;
+		bottom: 0;
+		display: flex;
+		height: 5em;
+		left: 50%;
+		margin: 0 0 0 -5em;
+		overflow: hidden;
+		text-indent: 10em;
+		white-space: nowrap;
+		width: 10em;
+		z-index: 1;
+		justify-content: center;
+		align-items: center;
+	}
+
+		.goto-next:before {
+			background-image: url("images/arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 1.5em;
+			left: 50%;
+			margin: -0.75em 0 0 -1em;
+			top: 50%;
+			width: 2em;
+			z-index: 1;
+		}
+
+		.button-next{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items:center;
+			width:100px;
+			height:auto;
+			text-decoration: none;
+		}
+ 
   /* Media Query for devices with max-width of 768px */
   @media screen and (max-width: 768px) {
 	.profile-content { 
@@ -3129,38 +3174,7 @@ body {
 			opacity: 0.25;
 		}
 
-/* Goto Next */
 
-	.goto-next {
-		border: 0;
-		bottom: 0;
-		display: block;
-		height: 5em;
-		left: 50%;
-		margin: 0 0 0 -5em;
-		overflow: hidden;
-		position: absolute;
-		text-indent: 10em;
-		white-space: nowrap;
-		width: 10em;
-		z-index: 1;
-	}
-
-		.goto-next:before {
-			background-image: url("images/arrow.svg");
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			content: '';
-			display: block;
-			height: 1.5em;
-			left: 50%;
-			margin: -0.75em 0 0 -1em;
-			position: absolute;
-			top: 50%;
-			width: 2em;
-			z-index: 1;
-		}
 
 /* Spotlight */
 
