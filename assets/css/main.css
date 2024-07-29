@@ -245,48 +245,19 @@ input, select, textarea {
 
   /* Goto Next */
 
-	.goto-next {
-		border: 0;
-		bottom: 0;
-		display: flex;
-		height: 5em;
-		left: 50%;
-		margin: 0 0 0 -5em;
-		overflow: hidden;
-		text-indent: 10em;
-		white-space: nowrap;
-		width: 10em;
-		z-index: 1;
-		justify-content: center;
-		align-items: center;
-	}
-
-		.goto-next:before {
-			background-image: url("images/arrow.svg");
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			content: '';
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 1.5em;
-			left: 50%;
-			margin: -0.75em 0 0 -1em;
-			top: 50%;
-			width: 2em;
-			z-index: 1;
-		}
-
+	
 		.button-next{
 			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
+			justify-content:center;
 			align-items:center;
-			width:100px;
-			height:auto;
+			justify-items: center;
 			text-decoration: none;
+			padding-bottom: 20px;
 		}
+		.button-next a {
+		font-size: xx-large;
+		}
+ 
  
   /* Media Query for devices with max-width of 768px */
   @media screen and (max-width: 768px) {
@@ -329,9 +300,7 @@ input, select, textarea {
 	  height: auto!important; 
 	}
 
-	.content-grabber{
-		padding:20px;
-	}
+	
 	.profile-angelzeferino-headshot{
 		width:250px;
 		height:auto;
@@ -353,7 +322,31 @@ input, select, textarea {
 		padding:20px;
 
 	}
+	.button-next{
+		justify-content: flex-end;
+		padding-right: 20px;
+	}
+	.button-next a {
+		font-size: larger;
+		}
 
+  }
+  @media screen and (max-width:1004px)
+  {
+	.profile-content { 
+		margin:0;
+		padding:0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width:100%;
+		height: auto;
+	  } 
+	.content-grabber{
+		display:flex;
+		padding:20px;
+		padding-top: 200px;
+	}
   }
   
 	 
