@@ -183,8 +183,9 @@ input, select, textarea {
 .content-more {
 	display: flex;
 	max-width: 100%;
-	height: 100vh;
+	height: auto;
   }
+
   
   #content-desc {
 	flex: 0 0 40%; 
@@ -196,14 +197,61 @@ input, select, textarea {
 	align-items: center;
 	border-right: 3px solid #e9e5e5; /* Add a 2px solid black border to the right */
   }
+  #content-img {
+	flex: 0 0 60%; /* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 60% */
+	display: flex; /* Added to center the image */
+	align-items: center; /* Center the image vertically */
+	justify-content: center; /* Center the image horizontally */
+	overflow: hidden; /* Hide overflow to ensure the image stays within bounds */
+	background-image: url("images/pic03.jpg");
+	padding:20px;
+
+  }
   
+  #content-img img {
+	width: 100%; /* Fill the width of the parent div */
+	height:100%;
+	object-fit: cover; 
+	
+  }
+
+  
+  #image-section {
+	flex: 0 0 60%; /* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 60% */
+	display: flex; /* Added to center the image */
+	align-items: center; /* Center the image vertically */
+	justify-content: center; /* Center the image horizontally */
+	overflow: hidden; /* Hide overflow to ensure the image stays within bounds */
+	background-image: url("images/pic03.jpg");
+	padding:20px;
+  }
+  
+  #image-section img {
+	width: 100%; /* Fill the width of the parent div */
+	height: 100%; /* Fill the height of the parent div */
+	object-fit: cover; /* Ensure the image covers the entire area of the parent */
+  }
+  
+  #text-section {
+	flex: 0 0 40%; 
+	/* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 40% */
+	background-color: rgba(23, 24, 32, 0.95);
+	padding-top: 120px;
+	padding-left: 40px;
+	padding-right: 40px;
+	align-items: center;
+	border-right: 3px solid #e9e5e5; /* Add a 3px solid border to the left */
+  }
 
   /* Media Query for devices with max-width of 768px */
   @media screen and (max-width: 768px) {
 	.profile-content { 
+	  padding:0;
 	  display: flex;
 	  flex-direction: column;
-	  max-width: 600px;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
 	  height: auto;
 	} 
 	
@@ -216,16 +264,17 @@ input, select, textarea {
 	}
   
 	#description-content p {
-	  margin: 0;
 	  padding: 0;
-	  height: auto;
+	  display:flex;
 	  align-items: center;
+	  justify-content: center;
 	}
   
 	#angelHeader {
 	  align-items: center;
 	  align-self: center;
-	  padding-left: 50px;
+	  padding:0;
+
 	}
   
 	.content-more {
@@ -252,6 +301,7 @@ input, select, textarea {
 
 	#text-section{
 		padding-bottom: 40px;
+		border-left: 3px solid #e9e5e5;
 	}
 	#image-section img{
 		padding:20px;
@@ -260,49 +310,7 @@ input, select, textarea {
 
   }
   
-	  #content-img {
-		flex: 0 0 60%; /* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 60% */
-		display: flex; /* Added to center the image */
-		align-items: center; /* Center the image vertically */
-		justify-content: center; /* Center the image horizontally */
-		overflow: hidden; /* Hide overflow to ensure the image stays within bounds */
-		background-image: url("images/pic03.jpg");
-
-	  }
-	  
-	  #content-img img {
-		width: 100%; /* Fill the width of the parent div */
-		/* Fill the height of the parent div */
-		height:100%;
-		object-fit: cover; /* Ensure the image covers the entire area of the parent */
-	  }
-	
-	  
-	  #image-section {
-		flex: 0 0 60%; /* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 60% */
-		display: flex; /* Added to center the image */
-		align-items: center; /* Center the image vertically */
-		justify-content: center; /* Center the image horizontally */
-		overflow: hidden; /* Hide overflow to ensure the image stays within bounds */
-		background-image: url("images/pic03.jpg");
-	  }
-	  
-	  #image-section img {
-		width: 100%; /* Fill the width of the parent div */
-		height: 100%; /* Fill the height of the parent div */
-		object-fit: cover; /* Ensure the image covers the entire area of the parent */
-	  }
-	  
-	  #text-section {
-		flex: 0 0 40%; 
-		/* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 40% */
-		background-color: rgba(23, 24, 32, 0.95);
-		padding-top: 120px;
-		padding-left: 40px;
-		padding-right: 40px;
-		align-items: center;
-		border-left: 3px solid #e9e5e5; /* Add a 3px solid border to the left */
-	  }
+	 
 	  input[type=text], select, textarea {
 		width: 100%; /* Full width */
 		padding: 12px; /* Some padding */ 
